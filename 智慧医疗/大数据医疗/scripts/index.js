@@ -1,76 +1,93 @@
 var symptomName = last_month_day();
 
 $(function(){
+  // 初始化地图
+  initMap();
 
-
-  init();
-  init2();
-    $("#el-dialog").addClass("hide");
+  // 初始化其他图表
+  $("#el-dialog").addClass("hide");
   $(".close").click(function(event) {
     $("#el-dialog").addClass("hide");
   });
 
   var date = new Date();
-     var numble = date.getDate();
-     var today = getFormatMonth(new Date());
-     $("#date1").html(today);
-     $("#date2").html(today);
-     $("#date3").html(today);
-     $("#date4").html(today);
-
+  var numble = date.getDate();
+  var today = getFormatMonth(new Date());
+  $("#date1").html(today);
+  $("#date2").html(today);
+  $("#date3").html(today);
+  $("#date4").html(today);
 
   lay('.demo-input').each(function(){
-     laydate.render({
-        type: 'month',
-         elem: this,
-         trigger: 'click',
-         theme: '#95d7fb',
-         calendar: true,
-         showBottom: true,
-         done: function () {
-            console.log( $("#startDate").val())
-
-         }
-     })
- });
-
+    laydate.render({
+      type: 'month',
+      elem: this,
+      trigger: 'click',
+      theme: '#95d7fb',
+      calendar: true,
+      showBottom: true,
+      done: function () {
+        console.log( $("#startDate").val())
+      }
+    })
+  });
 })
+
+// 使用AMapLoader加载高德地图API
+function initMap() {
+  // 确保地图容器可见
+  document.getElementById('mapChart').style.visibility = 'visible';
+  document.getElementById('mapChart').style.height = '95%';
+
+  AMapLoader.load({
+    key: "30a79cd13857ca7b1277918330ca768f",
+    version: "2.0",
+    plugins: ['AMap.Scale', 'AMap.ToolBar']
+  }).then((AMap) => {
+    // 初始化地图
+    var map = new AMap.Map('mapChart', {
+      viewMode: '3D',
+      zoom: 12,
+      center: [118.096435, 24.485408],
+      mapStyle: 'amap://styles/normal'
+    });
+
+    // 添加地图控件
+    map.addControl(new AMap.Scale());
+    map.addControl(new AMap.ToolBar());
+
+    // 添加地图标记点
+    var markers = [
+      {position: [118.096435, 24.485408], title: '厦门市'},
+      {position: [118.094564, 24.457358], title: '厦门第一医院'},
+      {position: [118.104103, 24.477761], title: '厦门中山医院'},
+      {position: [118.14748, 24.506295], title: '厦门中医院'},
+      {position: [118.254841, 24.665349], title: '厦门第五医院'}
+    ];
+
+    markers.forEach(function(marker) {
+      var markerObj = new AMap.Marker({
+        position: marker.position,
+        title: marker.title,
+        map: map
+      });
+
+      // 添加点击事件
+      markerObj.on('click', function() {
+        $("#el-dialog").removeClass('hide');
+        $("#reportTitle").html(marker.title);
+      });
+    });
+
+    // 初始化其他图表
+    init2();
+    init();
+  }).catch(e => {
+    console.error('高德地图加载失败', e);
+  });
+}
+
 function init(){
-  //地图
-  var mapChart = echarts.init(document.getElementById('mapChart'));
-  mapChart.setOption({
-      bmap: {
-          center: [118.096435,24.485408],
-          zoom: 12,
-          roam: true,
-
-      },
-      tooltip : {
-          trigger: 'item',
-          formatter:function(params, ticket, callback){
-              return params.value[2]
-          }
-      },
-      series: [{
-          type: 'scatter',
-          coordinateSystem: 'bmap',
-          data: [
-            [118.096435, 24.485408, '厦门市'] ,
-            [118.094564, 24.457358, '厦门第一医院'] ,
-            [118.104103, 24.477761, '厦门中山医院'],
-            [118.14748, 24.506295, '厦门中医院'],
-            [118.254841, 24.665349, '厦门第五医院'],
-           ]
-      }]
-  });
-  mapChart.on('click', function (params) {
-      $("#el-dialog").removeClass('hide');
-      $("#reportTitle").html(params.value[2]);
-  });
-
-  var bmap = mapChart.getModel().getComponent('bmap').getBMap()
-  bmap.addControl(new BMap.MapTypeControl({mapTypes: [BMAP_NORMAL_MAP,BMAP_SATELLITE_MAP ]}));
-  bmap.setMapStyle({style:'midnight'})
 
 
   var pieChart1 = echarts.init(document.getElementById('pieChart1'));
