@@ -1,0 +1,13 @@
+{
+  "name": "data-screen-dashboard",
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "github": {
+    "silent": true
+  },
+  "buildCommand": false,
+  "outputDirectory": ".",
+  "framework": null
+}

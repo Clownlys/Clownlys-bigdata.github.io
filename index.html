@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大数据可视化平台导航</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            min-height: 100vh;
+        }
+        .card {
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .material-icons {
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-white mb-4">大数据可视化平台导航</h1>
+            <p class="text-xl text-white opacity-80">快速访问各个子系统</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- 智慧交通 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-6 text-center">
+                    <span class="material-icons text-blue-600 mb-4">directions_car</span>
+                    <h3 class="text-xl font-semibold mb-2">智慧交通</h3>
+                    <p class="text-gray-600 mb-4">交通大数据分析与可视化</p>
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="智慧交通/高速交通大数据分析平台/index.html" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition duration-300">
+                            高速交通大数据
+                        </a>
+                        <a href="智慧交通/大数据视频监控/index.html" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition duration-300">
+                            大数据视频监控
+                        </a>
+                        <a href="智慧交通/旅游大数据/static.html" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition duration-300">
+                            旅游大数据
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 智慧医疗 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-6 text-center">
+                    <span class="material-icons text-red-600 mb-4">local_hospital</span>
+                    <h3 class="text-xl font-semibold mb-2">智慧医疗</h3>
+                    <p class="text-gray-600 mb-4">医疗健康大数据平台</p>
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="智慧医疗/大数据医疗/views/index.html" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded transition duration-300">
+                            医疗大数据平台
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 智慧电商 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-6 text-center">
+                    <span class="material-icons text-purple-600 mb-4">shopping_cart</span>
+                    <h3 class="text-xl font-semibold mb-2">智慧电商</h3>
+                    <p class="text-gray-600 mb-4">电子商务大数据分析</p>
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="智慧电商/电子商务公共服务平台大数据中心/scripts/china.js" class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded transition duration-300">
+                            电子商务平台
+                        </a>
+                        <a href="智慧电商/运营大数据/index.html" class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded transition duration-300">
+                            运营大数据
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 智慧物流 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-6 text-center">
+                    <span class="material-icons text-green-600 mb-4">local_shipping</span>
+                    <h3 class="text-xl font-semibold mb-2">智慧物流</h3>
+                    <p class="text-gray-600 mb-4">物流大数据服务平台</p>
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="智慧物流/智慧物流/index.html" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition duration-300">
+                            智慧物流服务中心
+                        </a>
+                        <a href="智慧物流/物流大数据服务平台/page/index.html" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition duration-300">
+                            物流大数据服务
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 智慧政务 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-6 text-center">
+                    <span class="material-icons text-yellow-600 mb-4">account_balance</span>
+                    <h3 class="text-xl font-semibold mb-2">智慧政务</h3>
+                    <p class="text-gray-600 mb-4">政务大数据可视化</p>
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="智慧政务/土地交易大数据可视化平台/index.html" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded transition duration-300">
+                            土地交易大数据
+                        </a>
+                        <a href="智慧政务/智慧社区/index.html" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded transition duration-300">
+                            智慧社区
+                        </a>
+                        <a href="智慧政务/综合分析平台/pages/index.html" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded transition duration-300">
+                            综合分析平台
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 智慧气象 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-6 text-center">
+                    <span class="material-icons text-cyan-600 mb-4">cloud</span>
+                    <h3 class="text-xl font-semibold mb-2">智慧气象</h3>
+                    <p class="text-gray-600 mb-4">气象预报大数据平台</p>
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="智慧气象/气象预报大数据平台/index.html" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-4 rounded transition duration-300">
+                            气象预报大数据
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 智慧运维 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-6 text-center">
+                    <span class="material-icons text-indigo-600 mb-4">settings</span>
+                    <h3 class="text-xl font-semibold mb-2">智慧运维</h3>
+                    <p class="text-gray-600 mb-4">设备环境监测平台</p>
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="智慧运维/设备环境监测平台/index.html" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded transition duration-300">
+                            设备环境监测
+                        </a>
+                        <a href="智慧运维/可视化监控管理/index.html" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded transition duration-300">
+                            可视化监控管理
+                        </a>
+                        <a href="智慧运维/大数据统计展示大屏/index.html" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded transition duration-300">
+                            大数据统计展示
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 智慧城市 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="p-6 text-center">
+                    <span class="material-icons text-pink-600 mb-4">location_city</span>
+                    <h3 class="text-xl font-semibold mb-2">智慧城市</h3>
+                    <p class="text-gray-600 mb-4">城市大数据可视化</p>
+                    <div class="grid grid-cols-1 gap-2">
+                        <a href="智慧城市/大数据可视化展板通用模板/index.html" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded transition duration-300">
+                            大数据可视化展板
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-12 text-center text-white opacity-80">
+            <p>© 2023 大数据可视化平台 - 所有子系统快速导航</p>
+        </footer>
+    </div>
+</body>
+</html>
