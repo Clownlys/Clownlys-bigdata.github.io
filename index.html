@@ -232,156 +232,601 @@
 
         <header class="text-center my-12">
             <h2 class="text-3xl font-bold text-white mb-4">网站大屏展示</h2>
-            <p class="text-xl text-white opacity-80">选择下面的大屏进行查看</p>
+            <p class="text-xl text-white opacity-80">按编号顺序浏览所有大屏</p>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <!-- 医疗大数据 -->
-            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
-                <div class="p-6 text-center">
-                    <span class="material-icons text-red-600 mb-4">health_and_safety</span>
-                    <h3 class="text-xl font-semibold mb-2">医疗大数据</h3>
-                    <p class="text-gray-600 mb-4">医疗健康监测平台</p>
-                    <div class="grid grid-cols-1 gap-2">
-                        <a href="web/023 医院大数据展示/index.html" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded transition duration-300">
-                            医院大数据展示
-                        </a>
-                        <a href="web/103 人口增长对医疗影响可视化分析/index.html" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded transition duration-300">
-                            医疗影响分析
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <!-- 001-030 大屏列表 -->
+                <a href="web/001 政务服务大数据可视化监管平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">001</span>
+                    <span class="text-white">政务服务大数据可视化监管平台</span>
+                </a>
 
-            <!-- 疫情监控 -->
-            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
-                <div class="p-6 text-center">
-                    <span class="material-icons text-purple-600 mb-4">coronavirus</span>
-                    <h3 class="text-xl font-semibold mb-2">疫情监控</h3>
-                    <p class="text-gray-600 mb-4">疫情实时监测平台</p>
-                    <div class="grid grid-cols-1 gap-2">
-                        <a href="web/006 全国疫情实时监控/index.html" class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded transition duration-300">
-                            全国疫情实时监控
-                        </a>
-                        <a href="web/100 新型冠状肺炎实时监测大屏/index.html" class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded transition duration-300">
-                            新型冠状肺炎监测
-                        </a>
-                        <a href="web/010 双数智慧公卫-传染病督导平台/index.html" class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded transition duration-300">
-                            传染病督导平台
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <a href="web/002 水质情况实时监测预警系统/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">002</span>
+                    <span class="text-white">水质情况实时监测预警系统</span>
+                </a>
 
-            <!-- 金融大数据 -->
-            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
-                <div class="p-6 text-center">
-                    <span class="material-icons text-green-600 mb-4">payments</span>
-                    <h3 class="text-xl font-semibold mb-2">金融大数据</h3>
-                    <p class="text-gray-600 mb-4">金融数据可视化</p>
-                    <div class="grid grid-cols-1 gap-2">
-                        <a href="web/108 银行数据可视化/index.html" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition duration-300">
-                            银行数据可视化
-                        </a>
-                        <a href="web/045 信用风险定位系统(银行版)/index.html" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition duration-300">
-                            信用风险定位系统
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <a href="web/003 酷炫智能大屏数据中心/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">003</span>
+                    <span class="text-white">酷炫智能大屏数据中心</span>
+                </a>
 
-            <!-- 设备监测 -->
-            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
-                <div class="p-6 text-center">
-                    <span class="material-icons text-blue-600 mb-4">sensors</span>
-                    <h3 class="text-xl font-semibold mb-2">设备监测</h3>
-                    <p class="text-gray-600 mb-4">设备环境监测平台</p>
-                    <div class="grid grid-cols-1 gap-2">
-                        <a href="web/026 设备环境监测平台/index.html" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition duration-300">
-                            设备环境监测平台
-                        </a>
-                        <a href="web/064 设备环境监测平台/index.html" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition duration-300">
-                            设备环境监测平台(备用)
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <a href="web/004 政务大数据共享交换平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">004</span>
+                    <span class="text-white">政务大数据共享交换平台</span>
+                </a>
 
-            <!-- 教育大数据 -->
-            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
-                <div class="p-6 text-center">
-                    <span class="material-icons text-yellow-600 mb-4">school</span>
-                    <h3 class="text-xl font-semibold mb-2">教育大数据</h3>
-                    <p class="text-gray-600 mb-4">教育数据分析平台</p>
-                    <div class="grid grid-cols-1 gap-2">
-                        <a href="web/101 校情数据综合分析平台/index.html" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded transition duration-300">
-                            校情数据综合分析
-                        </a>
-                        <a href="web/107 上海XX大学迎新实时大数据看板/index.html" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded transition duration-300">
-                            大学迎新实时看板
-                        </a>
-                        <a href="web/116 学生综合成绩评价系统大屏/index.html" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded transition duration-300">
-                            学生成绩评价系统
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <a href="web/005 可视化监控管理/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">005</span>
+                    <span class="text-white">可视化监控管理</span>
+                </a>
 
-            <!-- 智能大屏 -->
-            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
-                <div class="p-6 text-center">
-                    <span class="material-icons text-indigo-600 mb-4">dashboard</span>
-                    <h3 class="text-xl font-semibold mb-2">智能大屏</h3>
-                    <p class="text-gray-600 mb-4">数据可视化平台</p>
-                    <div class="grid grid-cols-1 gap-2">
-                        <a href="web/003 酷炫智能大屏数据中心/index.html" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded transition duration-300">
-                            酷炫智能大屏数据中心
-                        </a>
-                        <a href="web/069 智能看板新中心/index.html" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded transition duration-300">
-                            智能看板新中心
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <a href="web/006 全国疫情实时监控/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">006</span>
+                    <span class="text-white">全国疫情实时监控</span>
+                </a>
 
-            <!-- 大数据模板 -->
-            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
-                <div class="p-6 text-center">
-                    <span class="material-icons text-pink-600 mb-4">template_count_chart</span>
-                    <h3 class="text-xl font-semibold mb-2">大数据模板</h3>
-                    <p class="text-gray-600 mb-4">通用大数据可视化模板</p>
-                    <div class="grid grid-cols-1 gap-2">
-                        <a href="web/011 大数据可视化系统数据分析通用模版/index.html" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded transition duration-300">
-                            大数据可视化通用模板
-                        </a>
-                        <a href="web/025 大数据可视化展板通用模板/index.html" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded transition duration-300">
-                            大数据可视化展板模板
-                        </a>
-                        <a href="web/050 大数据可视化展示平台通用模板/index.html" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded transition duration-300">
-                            大数据可视化展示平台
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <a href="web/007 惠民服务平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">007</span>
+                    <span class="text-white">惠民服务平台</span>
+                </a>
 
-            <!-- 统计展示 -->
-            <div class="card bg-white rounded-lg overflow-hidden shadow-lg">
-                <div class="p-6 text-center">
-                    <span class="material-icons text-cyan-600 mb-4">bar_chart</span>
-                    <h3 class="text-xl font-semibold mb-2">统计展示</h3>
-                    <p class="text-gray-600 mb-4">大数据统计展示</p>
-                    <div class="grid grid-cols-1 gap-2">
-                        <a href="web/056 大数据统计展示大屏/index.html" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-4 rounded transition duration-300">
-                            大数据统计展示大屏
-                        </a>
-                        <a href="web/057 大屏数据统计/index.html" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-4 rounded transition duration-300">
-                            大屏数据统计
-                        </a>
-                        <a href="web/058 大屏数据智慧中心统计/index.html" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-4 rounded transition duration-300">
-                            大屏数据智慧中心统计
-                        </a>
-                    </div>
-                </div>
+                <a href="web/008 兰州智慧消防大数据平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">008</span>
+                    <span class="text-white">兰州智慧消防大数据平台</span>
+                </a>
+
+                <a href="web/009 某公司大数据监控平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">009</span>
+                    <span class="text-white">某公司大数据监控平台</span>
+                </a>
+
+                <a href="web/010 双数智慧公卫-传染病督导平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">010</span>
+                    <span class="text-white">双数智慧公卫-传染病督导平台</span>
+                </a>
+
+                <a href="web/011 大数据可视化系统数据分析通用模版/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">011</span>
+                    <span class="text-white">大数据可视化系统数据分析通用模版</span>
+                </a>
+
+                <a href="web/012 某公司大数据展示模版/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">012</span>
+                    <span class="text-white">某公司大数据展示模版</span>
+                </a>
+
+                <a href="web/013 某公司大数据展示模版/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">013</span>
+                    <span class="text-white">某公司大数据展示模版</span>
+                </a>
+
+                <a href="web/014 时实客流量监控中心/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">014</span>
+                    <span class="text-white">时实客流量监控中心</span>
+                </a>
+
+                <a href="web/015 广西矿产资源大数据监管平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">015</span>
+                    <span class="text-white">广西矿产资源大数据监管平台</span>
+                </a>
+
+                <a href="web/016 广西矿产资源大数据监管平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">016</span>
+                    <span class="text-white">广西矿产资源大数据监管平台</span>
+                </a>
+
+                <a href="web/017 大数据可视化通用素材/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">017</span>
+                    <span class="text-white">大数据可视化通用素材</span>
+                </a>
+
+                <a href="web/018 大数据可视化系统数据分析通用模版/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">018</span>
+                    <span class="text-white">大数据可视化系统数据分析通用模版</span>
+                </a>
+
+                <a href="web/019 大数据可视化系统数据分析通用模版/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">019</span>
+                    <span class="text-white">大数据可视化系统数据分析通用模版</span>
+                </a>
+
+                <a href="web/020 大数据通用模版大标题样式/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">020</span>
+                    <span class="text-white">大数据通用模版大标题样式</span>
+                </a>
+
+                <a href="web/021 大数据通用模版/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">021</span>
+                    <span class="text-white">大数据通用模版</span>
+                </a>
+
+                <a href="web/022 全息档案平台中心/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">022</span>
+                    <span class="text-white">全息档案平台中心</span>
+                </a>
+
+                <a href="web/023 医院大数据展示/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">023</span>
+                    <span class="text-white">医院大数据展示</span>
+                </a>
+
+                <a href="web/024 智慧社区内网比对平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">024</span>
+                    <span class="text-white">智慧社区内网比对平台</span>
+                </a>
+
+                <a href="web/025 大数据可视化展板通用模板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">025</span>
+                    <span class="text-white">大数据可视化展板通用模板</span>
+                </a>
+
+                <a href="web/026 设备环境监测平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">026</span>
+                    <span class="text-white">设备环境监测平台</span>
+                </a>
+
+                <a href="web/027 全国消费者情况看板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">027</span>
+                    <span class="text-white">全国消费者情况看板</span>
+                </a>
+
+                <a href="web/028 移动能耗管理平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">028</span>
+                    <span class="text-white">移动能耗管理平台</span>
+                </a>
+
+                <a href="web/029 南方软件视频平台大屏中心/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">029</span>
+                    <span class="text-white">南方软件视频平台大屏中心</span>
+                </a>
+
+                <a href="web/030 全国图书零售检测中心/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">030</span>
+                    <span class="text-white">全国图书零售检测中心</span>
+                </a>
+
+                <a href="web/031 数据可视化大屏展示系统/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">031</span>
+                    <span class="text-white">数据可视化大屏展示系统</span>
+                </a>
+
+                <a href="web/032 物流云数据看板平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">032</span>
+                    <span class="text-white">物流云数据看板平台</span>
+                </a>
+
+                <a href="web/033 数据可视化页面设计/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">033</span>
+                    <span class="text-white">数据可视化页面设计</span>
+                </a>
+
+                <a href="web/034 晋城高速综合管控大数据/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">034</span>
+                    <span class="text-white">晋城高速综合管控大数据</span>
+                </a>
+
+                <a href="web/035 视频监控前后台通用模板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">035</span>
+                    <span class="text-white">视频监控前后台通用模板</span>
+                </a>
+
+                <a href="web/036 门店销售监控平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">036</span>
+                    <span class="text-white">门店销售监控平台</span>
+                </a>
+
+                <a href="web/037 建筑智慧工地管控/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">037</span>
+                    <span class="text-white">建筑智慧工地管控</span>
+                </a>
+
+                <a href="web/038 无线网络大数据平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">038</span>
+                    <span class="text-white">无线网络大数据平台</span>
+                </a>
+
+                <a href="web/039 湖南省大数据可视化平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">039</span>
+                    <span class="text-white">湖南省大数据可视化平台</span>
+                </a>
+
+                <a href="web/040 Echart图例使用/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">040</span>
+                    <span class="text-white">Echart图例使用</span>
+                </a>
+
+                <a href="web/041 智慧物流服务中心/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">041</span>
+                    <span class="text-white">智慧物流服务中心</span>
+                </a>
+
+                <a href="web/042 大数据分析系统/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">042</span>
+                    <span class="text-white">大数据分析系统</span>
+                </a>
+
+                <a href="web/043 网络当天实时发稿量/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">043</span>
+                    <span class="text-white">网络当天实时发稿量</span>
+                </a>
+
+                <a href="web/044 车联网平台数据概览/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">044</span>
+                    <span class="text-white">车联网平台数据概览</span>
+                </a>
+
+                <a href="web/045 信用风险定位系统(银行版)/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">045</span>
+                    <span class="text-white">信用风险定位系统(银行版)</span>
+                </a>
+
+                <a href="web/046 作战指挥室/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">046</span>
+                    <span class="text-white">作战指挥室</span>
+                </a>
+
+                <a href="web/047 公司名称大数据可视化平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">047</span>
+                    <span class="text-white">公司名称大数据可视化平台</span>
+                </a>
+
+                <a href="web/048 大数据可视化展板通用模板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">048</span>
+                    <span class="text-white">大数据可视化展板通用模板</span>
+                </a>
+
+                <a href="web/049 工厂信息监控台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">049</span>
+                    <span class="text-white">工厂信息监控台</span>
+                </a>
+
+                <a href="web/050 大数据可视化展示平台通用模板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">050</span>
+                    <span class="text-white">大数据可视化展示平台通用模板</span>
+                </a>
+
+                <a href="web/051 通用大数据可视化展示平台模板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">051</span>
+                    <span class="text-white">通用大数据可视化展示平台模板</span>
+                </a>
+
+                <a href="web/052 智慧社区内网比对平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">052</span>
+                    <span class="text-white">智慧社区内网比对平台</span>
+                </a>
+
+                <a href="web/053 通用大数据可视化展示平台模板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">053</span>
+                    <span class="text-white">通用大数据可视化展示平台模板</span>
+                </a>
+
+                <a href="web/054 公安大数据监控平台2/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">054</span>
+                    <span class="text-white">公安大数据监控平台2</span>
+                </a>
+
+                <a href="web/055 物流大数据服务平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">055</span>
+                    <span class="text-white">物流大数据服务平台</span>
+                </a>
+
+                <a href="web/056 大数据统计展示大屏/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">056</span>
+                    <span class="text-white">大数据统计展示大屏</span>
+                </a>
+
+                <a href="web/057 大屏数据统计/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">057</span>
+                    <span class="text-white">大屏数据统计</span>
+                </a>
+
+                <a href="web/058 大屏数据智慧中心统计/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">058</span>
+                    <span class="text-white">大屏数据智慧中心统计</span>
+                </a>
+
+                <a href="web/059 物联网平台数据统计/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">059</span>
+                    <span class="text-white">物联网平台数据统计</span>
+                </a>
+
+                <a href="web/060 广西电子商务公共服务平台大数据中心/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">060</span>
+                    <span class="text-white">广西电子商务公共服务平台大数据中心</span>
+                </a>
+
+                <a href="web/061 智慧小区大数据分析/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">061</span>
+                    <span class="text-white">智慧小区大数据分析</span>
+                </a>
+
+                <a href="web/062 数据概览演示案例/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">062</span>
+                    <span class="text-white">数据概览演示案例</span>
+                </a>
+
+                <a href="web/063 商品运营大数据/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">063</span>
+                    <span class="text-white">商品运营大数据</span>
+                </a>
+
+                <a href="web/064 设备环境监测平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">064</span>
+                    <span class="text-white">设备环境监测平台</span>
+                </a>
+
+                <a href="web/065 游戏可视化大数据用户案例/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">065</span>
+                    <span class="text-white">游戏可视化大数据用户案例</span>
+                </a>
+
+                <a href="web/066 系统架构可视化监控/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">066</span>
+                    <span class="text-white">系统架构可视化监控</span>
+                </a>
+
+                <a href="web/067 xx区智慧旅游综合服务平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">067</span>
+                    <span class="text-white">xx区智慧旅游综合服务平台</span>
+                </a>
+
+                <a href="web/068 中国电信厅店营业效能分析/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">068</span>
+                    <span class="text-white">中国电信厅店营业效能分析</span>
+                </a>
+
+                <a href="web/069 智能看板新中心/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">069</span>
+                    <span class="text-white">智能看板新中心</span>
+                </a>
+
+                <a href="web/070 翼兴消防监控/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">070</span>
+                    <span class="text-white">翼兴消防监控</span>
+                </a>
+
+                <a href="web/071 市突发预警平台实时监控/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">071</span>
+                    <span class="text-white">市突发预警平台实时监控</span>
+                </a>
+
+                <a href="web/072 大连市突发预警实时监控/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">072</span>
+                    <span class="text-white">大连市突发预警实时监控</span>
+                </a>
+
+                <a href="web/073 观测站综合监控平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">073</span>
+                    <span class="text-white">观测站综合监控平台</span>
+                </a>
+
+                <a href="web/074 酒机运行状态/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">074</span>
+                    <span class="text-white">酒机运行状态</span>
+                </a>
+
+                <a href="web/075 数据可视化展示/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">075</span>
+                    <span class="text-white">数据可视化展示</span>
+                </a>
+
+                <a href="web/076 交管大数据人脸识别系统/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">076</span>
+                    <span class="text-white">交管大数据人脸识别系统</span>
+                </a>
+
+                <a href="web/077 大数据可视化展示平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">077</span>
+                    <span class="text-white">大数据可视化展示平台</span>
+                </a>
+
+                <a href="web/078 河长制大数据显示平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">078</span>
+                    <span class="text-white">河长制大数据显示平台</span>
+                </a>
+
+                <a href="web/079 保税区A仓监控中心/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">079</span>
+                    <span class="text-white">保税区A仓监控中心</span>
+                </a>
+
+                <a href="web/080 北斗车联网大数据平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">080</span>
+                    <span class="text-white">北斗车联网大数据平台</span>
+                </a>
+
+                <a href="web/081 北京市执法信息平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">081</span>
+                    <span class="text-white">北京市执法信息平台</span>
+                </a>
+
+                <a href="web/082 南方草木商品交易[超级大屏]/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">082</span>
+                    <span class="text-white">南方草木商品交易[超级大屏]</span>
+                </a>
+
+                <a href="web/083 大数据可视化展示平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">083</span>
+                    <span class="text-white">大数据可视化展示平台</span>
+                </a>
+
+                <a href="web/084 大数据可视化展示平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">084</span>
+                    <span class="text-white">大数据可视化展示平台</span>
+                </a>
+
+                <a href="web/085 车辆综合管控平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">085</span>
+                    <span class="text-white">车辆综合管控平台</span>
+                </a>
+
+                <a href="web/086 物流大数据展示系统/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">086</span>
+                    <span class="text-white">物流大数据展示系统</span>
+                </a>
+
+                <a href="web/087 农业产业大数据指挥仓系统/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">087</span>
+                    <span class="text-white">农业产业大数据指挥仓系统</span>
+                </a>
+
+                <a href="web/088 HTML大数据综合分析平台模板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">088</span>
+                    <span class="text-white">HTML大数据综合分析平台模板</span>
+                </a>
+
+                <a href="web/089 警务综合监控管理平台HTML模板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">089</span>
+                    <span class="text-white">警务综合监控管理平台HTML模板</span>
+                </a>
+
+                <a href="web/090 企业营收大数据统计可视化大屏/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">090</span>
+                    <span class="text-white">企业营收大数据统计可视化大屏</span>
+                </a>
+
+                <a href="web/091 ECharts扩展示例自定义视图/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">091</span>
+                    <span class="text-white">ECharts扩展示例自定义视图</span>
+                </a>
+
+                <a href="web/092 酷炫大屏数据可视化模板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">092</span>
+                    <span class="text-white">酷炫大屏数据可视化模板</span>
+                </a>
+
+                <a href="web/093 办税渠道运行状态大数据监控平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">093</span>
+                    <span class="text-white">办税渠道运行状态大数据监控平台</span>
+                </a>
+
+                <a href="web/094 大数据统计展示大屏/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">094</span>
+                    <span class="text-white">大数据统计展示大屏</span>
+                </a>
+
+                <a href="web/095 交通大数据展示平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">095</span>
+                    <span class="text-white">交通大数据展示平台</span>
+                </a>
+
+                <a href="web/096 智慧农业大数据展示/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">096</span>
+                    <span class="text-white">智慧农业大数据展示</span>
+                </a>
+
+                <a href="web/097 程序员数据可视化大屏展示/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">097</span>
+                    <span class="text-white">程序员数据可视化大屏展示</span>
+                </a>
+
+                <a href="web/098 销售大数据分析/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">098</span>
+                    <span class="text-white">销售大数据分析</span>
+                </a>
+
+                <a href="web/099 英雄联盟LPL比赛数据可视化/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">099</span>
+                    <span class="text-white">英雄联盟LPL比赛数据可视化</span>
+                </a>
+
+                <a href="web/100 新型冠状肺炎实时监测大屏/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">100</span>
+                    <span class="text-white">新型冠状肺炎实时监测大屏</span>
+                </a>
+
+                <a href="web/101 校情数据综合分析平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">101</span>
+                    <span class="text-white">校情数据综合分析平台</span>
+                </a>
+
+                <a href="web/102 大数据可视化展示平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">102</span>
+                    <span class="text-white">大数据可视化展示平台</span>
+                </a>
+
+                <a href="web/103 人口增长对医疗影响可视化分析/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">103</span>
+                    <span class="text-white">人口增长对医疗影响可视化分析</span>
+                </a>
+
+                <a href="web/104 大数据可视化展示平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">104</span>
+                    <span class="text-white">大数据可视化展示平台</span>
+                </a>
+
+                <a href="web/105 大数据可视化展示平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">105</span>
+                    <span class="text-white">大数据可视化展示平台</span>
+                </a>
+
+                <a href="web/106 黄山茶园大数据平台指挥舱/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">106</span>
+                    <span class="text-white">黄山茶园大数据平台指挥舱</span>
+                </a>
+
+                <a href="web/107 上海XX大学迎新实时大数据看板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">107</span>
+                    <span class="text-white">上海XX大学迎新实时大数据看板</span>
+                </a>
+
+                <a href="web/108 银行数据可视化/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">108</span>
+                    <span class="text-white">银行数据可视化</span>
+                </a>
+
+                <a href="web/109 嘉定区区办税监控平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">109</span>
+                    <span class="text-white">嘉定区区办税监控平台</span>
+                </a>
+
+                <a href="web/110 崇明观测站/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">110</span>
+                    <span class="text-white">崇明观测站</span>
+                </a>
+
+                <a href="web/111 智慧消防大屏/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">111</span>
+                    <span class="text-white">智慧消防大屏</span>
+                </a>
+
+                <a href="web/112 茶叶种植大数据溯源平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">112</span>
+                    <span class="text-white">茶叶种植大数据溯源平台</span>
+                </a>
+
+                <a href="web/113 白茶种植大数据溯源平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">113</span>
+                    <span class="text-white">白茶种植大数据溯源平台</span>
+                </a>
+
+                <a href="web/114 HELLO共享单车运营管理平台/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">114</span>
+                    <span class="text-white">HELLO共享单车运营管理平台</span>
+                </a>
+
+                <a href="web/115 新能源汽车数量统计大屏/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">115</span>
+                    <span class="text-white">新能源汽车数量统计大屏</span>
+                </a>
+
+                <a href="web/116 学生综合成绩评价系统大屏/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">116</span>
+                    <span class="text-white">学生综合成绩评价系统大屏</span>
+                </a>
+
+                <a href="web/117 上海市图书馆大屏看板/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">117</span>
+                    <span class="text-white">上海市图书馆大屏看板</span>
+                </a>
+
+                <a href="web/118 旅游智慧中心/index.html" class="flex items-center p-3 bg-blue-600/20 hover:bg-blue-600/40 rounded-lg transition duration-300 border border-blue-500/30 hover:border-blue-500/60">
+                    <span class="bg-blue-600 text-white text-xs font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3">118</span>
+                    <span class="text-white">旅游智慧中心</span>
+                </a>
             </div>
         </div>
 
